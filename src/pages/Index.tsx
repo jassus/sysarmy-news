@@ -6,83 +6,87 @@ import { LucideGlobe, LucideDatabase, LucideCode, LucideTestTube2 } from "lucide
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 p-4 md:p-8">
+    <div className="min-h-screen bg-black p-4 md:p-8">
       {/* Email Container */}
-      <div className="mx-auto max-w-[600px] bg-white rounded-xl shadow-sm overflow-hidden">
+      <div className="mx-auto max-w-[600px] bg-[#000000] rounded-xl shadow-lg overflow-hidden border border-white/10">
         {/* Header */}
-        <div className="bg-[#1A1F2C] p-6 text-center">
-          <img 
-            src="/lovable-uploads/0139e1e1-fc03-458e-a5aa-34cb53506be5.png" 
-            alt="Sysarmy Logo"
-            className="h-12 mx-auto mb-4"
-          />
+        <div className="bg-[#000000] p-6 text-center border-b border-white/10">
+          <div className="grid grid-cols-3 gap-2 mb-6">
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+            <div className="aspect-square bg-white"></div>
+          </div>
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
             Tech News Digest
           </h1>
-          <p className="text-gray-300">Latest updates in Infrastructure, Product, and Testing</p>
+          <p className="text-gray-400">Latest updates in Infrastructure, Product, and Testing</p>
         </div>
 
         {/* Main Content */}
-        <div className="p-6">
-          <div className="space-y-6">
-            {/* Infrastructure News */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <LucideDatabase className="h-5 w-5 text-[#9b87f5]" />
-                <h2 className="text-xl font-semibold text-gray-900">Infrastructure Updates</h2>
-              </div>
-              <Card className="p-4 hover:shadow-md transition-shadow">
-                <Badge className="mb-2 bg-[#9b87f5]/10 text-[#9b87f5] hover:bg-[#9b87f5]/20">Breaking News</Badge>
-                <h3 className="text-lg font-medium mb-2">AWS Announces New Serverless Computing Features</h3>
-                <p className="text-gray-600 mb-4">Amazon Web Services introduces revolutionary serverless capabilities, enabling faster deployment and reduced costs.</p>
-                <Button variant="outline" className="text-[#9b87f5] hover:text-[#7E69AB] hover:bg-[#9b87f5]/10">
-                  Read More
-                </Button>
-              </Card>
+        <div className="p-6 space-y-6">
+          {/* Infrastructure News */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <LucideDatabase className="h-5 w-5 text-white" />
+              <h2 className="text-xl font-semibold text-white">Infrastructure Updates</h2>
             </div>
+            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
+              <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Breaking News</Badge>
+              <h3 className="text-lg font-medium mb-2 text-white">AWS Announces New Serverless Computing Features</h3>
+              <p className="text-gray-400 mb-4">Amazon Web Services introduces revolutionary serverless capabilities, enabling faster deployment and reduced costs.</p>
+              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white">
+                Read More
+              </Button>
+            </Card>
+          </div>
 
-            {/* Product Development */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <LucideCode className="h-5 w-5 text-[#9b87f5]" />
-                <h2 className="text-xl font-semibold text-gray-900">Product Development</h2>
-              </div>
-              <Card className="p-4 hover:shadow-md transition-shadow">
-                <Badge className="mb-2 bg-[#9b87f5]/10 text-[#9b87f5] hover:bg-[#9b87f5]/20">Latest Trends</Badge>
-                <h3 className="text-lg font-medium mb-2">The Rise of AI-Powered Development Tools</h3>
-                <p className="text-gray-600 mb-4">How artificial intelligence is revolutionizing the way developers write and review code.</p>
-                <Button variant="outline" className="text-[#9b87f5] hover:text-[#7E69AB] hover:bg-[#9b87f5]/10">
-                  Read More
-                </Button>
-              </Card>
+          {/* Product Development */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <LucideCode className="h-5 w-5 text-white" />
+              <h2 className="text-xl font-semibold text-white">Product Development</h2>
             </div>
+            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
+              <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Latest Trends</Badge>
+              <h3 className="text-lg font-medium mb-2 text-white">The Rise of AI-Powered Development Tools</h3>
+              <p className="text-gray-400 mb-4">How artificial intelligence is revolutionizing the way developers write and review code.</p>
+              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white">
+                Read More
+              </Button>
+            </Card>
+          </div>
 
-            {/* Testing & QA */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <LucideTestTube2 className="h-5 w-5 text-[#9b87f5]" />
-                <h2 className="text-xl font-semibold text-gray-900">Testing & QA</h2>
-              </div>
-              <Card className="p-4 hover:shadow-md transition-shadow">
-                <Badge className="mb-2 bg-[#9b87f5]/10 text-[#9b87f5] hover:bg-[#9b87f5]/20">Best Practices</Badge>
-                <h3 className="text-lg font-medium mb-2">Modern Testing Frameworks Comparison</h3>
-                <p className="text-gray-600 mb-4">An in-depth analysis of the most popular testing frameworks in 2024.</p>
-                <Button variant="outline" className="text-[#9b87f5] hover:text-[#7E69AB] hover:bg-[#9b87f5]/10">
-                  Read More
-                </Button>
-              </Card>
+          {/* Testing & QA */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <LucideTestTube2 className="h-5 w-5 text-white" />
+              <h2 className="text-xl font-semibold text-white">Testing & QA</h2>
             </div>
+            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
+              <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Best Practices</Badge>
+              <h3 className="text-lg font-medium mb-2 text-white">Modern Testing Frameworks Comparison</h3>
+              <p className="text-gray-400 mb-4">An in-depth analysis of the most popular testing frameworks in 2024.</p>
+              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white">
+                Read More
+              </Button>
+            </Card>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="bg-gray-50 p-6 text-center">
-          <h3 className="text-lg font-semibold mb-4">Stay Connected</h3>
+        <div className="bg-white/5 p-6 text-center border-t border-white/10">
+          <h3 className="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
           <div className="flex justify-center gap-4 mb-6">
-            <Button variant="outline" size="icon" className="rounded-full">
+            <Button variant="outline" size="icon" className="rounded-full border-white/20 text-white hover:bg-white/10">
               <LucideGlobe className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full">
+            <Button variant="outline" size="icon" className="rounded-full border-white/20 text-white hover:bg-white/10">
               <svg
                 className="h-4 w-4 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -92,11 +96,11 @@ const Index = () => {
               </svg>
             </Button>
           </div>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-400">
             You received this email because you subscribed to Sysarmy's tech updates.
           </p>
           <div className="mt-4">
-            <Button variant="link" className="text-sm text-gray-500 hover:text-[#9b87f5]">
+            <Button variant="link" className="text-sm text-gray-400 hover:text-white">
               Unsubscribe
             </Button>
           </div>

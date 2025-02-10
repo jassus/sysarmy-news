@@ -22,10 +22,10 @@ const Index = () => {
             <div className="aspect-square bg-white"></div>
             <div className="aspect-square bg-white"></div>
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
+          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 font-sans">
             Tech News Digest
           </h1>
-          <p className="text-gray-400">Latest updates in Infrastructure, Product, and Testing</p>
+          <p className="text-gray-400 font-mono">Latest updates in Infrastructure, Product, and Testing</p>
         </div>
 
         {/* Main Content */}
@@ -34,13 +34,13 @@ const Index = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <LucideDatabase className="h-5 w-5 text-white" />
-              <h2 className="text-xl font-semibold text-white">Infrastructure Updates</h2>
+              <h2 className="text-xl font-semibold text-white font-sans">Infrastructure Updates</h2>
             </div>
             <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
               <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Breaking News</Badge>
-              <h3 className="text-lg font-medium mb-2 text-white">AWS Announces New Serverless Computing Features</h3>
-              <p className="text-gray-400 mb-4">Amazon Web Services introduces revolutionary serverless capabilities, enabling faster deployment and reduced costs.</p>
-              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white">
+              <h3 className="text-lg font-medium mb-2 text-white font-sans">AWS Announces New Serverless Computing Features</h3>
+              <p className="text-gray-400 mb-4 font-mono">Amazon Web Services introduces revolutionary serverless capabilities, enabling faster deployment and reduced costs.</p>
+              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white font-mono">
                 Read More
               </Button>
             </Card>
@@ -50,13 +50,13 @@ const Index = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <LucideCode className="h-5 w-5 text-white" />
-              <h2 className="text-xl font-semibold text-white">Product Development</h2>
+              <h2 className="text-xl font-semibold text-white font-sans">Product Development</h2>
             </div>
             <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
               <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Latest Trends</Badge>
-              <h3 className="text-lg font-medium mb-2 text-white">The Rise of AI-Powered Development Tools</h3>
-              <p className="text-gray-400 mb-4">How artificial intelligence is revolutionizing the way developers write and review code.</p>
-              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white">
+              <h3 className="text-lg font-medium mb-2 text-white font-sans">The Rise of AI-Powered Development Tools</h3>
+              <p className="text-gray-400 mb-4 font-mono">How artificial intelligence is revolutionizing the way developers write and review code.</p>
+              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white font-mono">
                 Read More
               </Button>
             </Card>
@@ -66,13 +66,13 @@ const Index = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <LucideTestTube2 className="h-5 w-5 text-white" />
-              <h2 className="text-xl font-semibold text-white">Testing & QA</h2>
+              <h2 className="text-xl font-semibold text-white font-sans">Testing & QA</h2>
             </div>
             <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
               <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Best Practices</Badge>
-              <h3 className="text-lg font-medium mb-2 text-white">Modern Testing Frameworks Comparison</h3>
-              <p className="text-gray-400 mb-4">An in-depth analysis of the most popular testing frameworks in 2024.</p>
-              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white">
+              <h3 className="text-lg font-medium mb-2 text-white font-sans">Modern Testing Frameworks Comparison</h3>
+              <p className="text-gray-400 mb-4 font-mono">An in-depth analysis of the most popular testing frameworks in 2024.</p>
+              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white font-mono">
                 Read More
               </Button>
             </Card>
@@ -81,7 +81,7 @@ const Index = () => {
 
         {/* Footer */}
         <div className="bg-white/5 p-6 text-center border-t border-white/10">
-          <h3 className="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
+          <h3 className="text-lg font-semibold mb-4 text-white font-sans">Stay Connected</h3>
           <div className="flex justify-center gap-4 mb-6">
             <Button variant="outline" size="icon" className="rounded-full border-white/20 text-white hover:bg-white/10">
               <LucideGlobe className="h-4 w-4" />
@@ -96,11 +96,11 @@ const Index = () => {
               </svg>
             </Button>
           </div>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 font-mono">
             You received this email because you subscribed to Sysarmy's tech updates.
           </p>
           <div className="mt-4">
-            <Button variant="link" className="text-sm text-gray-400 hover:text-white">
+            <Button variant="link" className="text-sm text-gray-400 hover:text-white font-mono">
               Unsubscribe
             </Button>
           </div>

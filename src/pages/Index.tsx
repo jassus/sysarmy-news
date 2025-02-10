@@ -18,7 +18,7 @@ const Index = () => {
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 font-sans">
             Tech News Digest
           </h1>
-          <p className="text-gray-400 font-mono">Latest updates in Infrastructure, Product, and Testing</p>
+          <p className="text-gray-400 font-mono">¿Qué pasó en la semana?<br />Ponete cómodo, te traemos algunos datos para no quedar fuera de la conversación.</p>
         </div>
 
         {/* Main Content - Grid Layout */}

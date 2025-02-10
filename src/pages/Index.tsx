@@ -86,6 +86,19 @@ const Index = () => {
           </div>
         </div>
 
+        {/* Banner */}
+        <div className="bg-[#8B5CF6] p-8 text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-4 font-sans">
+            ¿Querés más contenido tecnológico?
+          </h2>
+          <p className="text-white font-mono mb-6">
+            Seguinos en nuestras redes sociales para estar al día con las últimas novedades
+          </p>
+          <button className="bg-white text-[#8B5CF6] px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors">
+            Seguir a Sysarmy
+          </button>
+        </div>
+
         {/* Footer */}
         <div className="bg-white/5 p-6 text-center border-t border-white/10">
           <p className="text-sm text-gray-400 font-mono">

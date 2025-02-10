@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LucideGlobe, LucideDatabase, LucideCode, LucideTestTube2, LucideGitBranch, LucideTerminal } from "lucide-react";
@@ -9,6 +10,11 @@ const Index = () => {
       <div className="mx-auto max-w-[800px] bg-[#000000] rounded-xl shadow-lg overflow-hidden border border-white/10">
         {/* Header */}
         <div className="bg-[#000000] p-6 text-center border-b border-white/10">
+          <img 
+            src="/lovable-uploads/079be5a7-51c4-4d5e-acef-88fbda687593.png" 
+            alt="Sysarmy Logo" 
+            className="h-16 mx-auto mb-4"
+          />
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 font-sans">
             Tech News Digest
           </h1>

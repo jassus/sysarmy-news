@@ -39,10 +39,7 @@ const Index = () => {
             <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
               <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Breaking News</Badge>
               <h3 className="text-lg font-medium mb-2 text-white font-sans">AWS Announces New Serverless Computing Features</h3>
-              <p className="text-gray-400 mb-4 font-mono">Amazon Web Services introduces revolutionary serverless capabilities, enabling faster deployment and reduced costs.</p>
-              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white font-mono">
-                Read More
-              </Button>
+              <p className="text-gray-400 font-mono">Amazon Web Services introduces revolutionary serverless capabilities, enabling faster deployment and reduced costs.</p>
             </Card>
           </div>
 
@@ -55,10 +52,7 @@ const Index = () => {
             <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
               <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Latest Trends</Badge>
               <h3 className="text-lg font-medium mb-2 text-white font-sans">The Rise of AI-Powered Development Tools</h3>
-              <p className="text-gray-400 mb-4 font-mono">How artificial intelligence is revolutionizing the way developers write and review code.</p>
-              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white font-mono">
-                Read More
-              </Button>
+              <p className="text-gray-400 font-mono">How artificial intelligence is revolutionizing the way developers write and review code.</p>
             </Card>
           </div>
 
@@ -71,10 +65,7 @@ const Index = () => {
             <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
               <Badge className="mb-2 bg-white/10 text-white hover:bg-white/20">Best Practices</Badge>
               <h3 className="text-lg font-medium mb-2 text-white font-sans">Modern Testing Frameworks Comparison</h3>
-              <p className="text-gray-400 mb-4 font-mono">An in-depth analysis of the most popular testing frameworks in 2024.</p>
-              <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:text-white font-mono">
-                Read More
-              </Button>
+              <p className="text-gray-400 font-mono">An in-depth analysis of the most popular testing frameworks in 2024.</p>
             </Card>
           </div>
         </div>

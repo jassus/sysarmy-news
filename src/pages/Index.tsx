@@ -16,9 +16,9 @@ const Index = () => {
             className="h-16 mx-auto mb-4"
           />
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 font-sans">
-            Tech News Digest
+            Firmware Friday
           </h1>
-          <p className="text-gray-400 font-mono">¿Qué pasó en la semana?<br />Ponete cómodo, te traemos algunos datos para no quedar fuera de la conversación.</p>
+          <p className="text-gray-400 font-mono">¿Listos para el update?<br />Actualizá tu stack en menos de 30''.</p>
         </div>
 
         {/* Main Content - Grid Layout */}

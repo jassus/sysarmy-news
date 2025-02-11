@@ -8,124 +8,377 @@ const Index = () => {
   const news = getMockNews();
 
   return (
-    <div className="min-h-screen bg-black p-4 md:p-8">
-      {/* Email Container */}
-      <div className="mx-auto max-w-[800px] bg-[#000000] rounded-xl shadow-lg overflow-hidden border border-white/10">
-        {/* Header */}
-        <div className="bg-[#000000] p-6 text-center border-b border-white/10">
-          <img 
-            src="/lovable-uploads/079be5a7-51c4-4d5e-acef-88fbda687593.png" 
-            alt="Sysarmy Logo" 
-            className="h-16 mx-auto mb-4"
-          />
-          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 font-sans">
-            Firmware Friday
-          </h1>
-          <p className="text-gray-400 font-mono">¿Listos para el update?<br />Actualizá tu stack en menos de 30''</p>
-        </div>
-
-        {/* Main Content - Grid Layout */}
-        <div className="p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Infrastructure News */}
-            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
-              <div className="flex items-center gap-2 mb-4">
-                <LucideDatabase className="h-5 w-5 text-white" />
-                <Badge className="bg-white/10 text-white hover:bg-white/20">Infrastructure</Badge>
-              </div>
-              <h3 className="text-lg font-medium mb-2 text-white font-sans leading-tight">{news.infrastructure.title}</h3>
-              <p className="text-sm text-gray-400 font-mono leading-relaxed line-clamp-2">{news.infrastructure.description}</p>
-            </Card>
-
-            {/* AI News */}
-            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
-              <div className="flex items-center gap-2 mb-4">
-                <LucideCode className="h-5 w-5 text-white" />
-                <Badge className="bg-white/10 text-white hover:bg-white/20">AI</Badge>
-              </div>
-              <h3 className="text-lg font-medium mb-2 text-white font-sans leading-tight">{news.ai.title}</h3>
-              <p className="text-sm text-gray-400 font-mono leading-relaxed line-clamp-2">{news.ai.description}</p>
-            </Card>
-
-            {/* Testing News */}
-            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
-              <div className="flex items-center gap-2 mb-4">
-                <LucideTestTube className="h-5 w-5 text-white" />
-                <Badge className="bg-white/10 text-white hover:bg-white/20">Testing</Badge>
-              </div>
-              <h3 className="text-lg font-medium mb-2 text-white font-sans">Testing Frameworks</h3>
-              <p className="text-gray-400 font-mono">Popular testing frameworks comparison for 2024.</p>
-            </Card>
-
-            {/* DevOps News */}
-            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
-              <div className="flex items-center gap-2 mb-4">
-                <LucideGitBranch className="h-5 w-5 text-white" />
-                <Badge className="bg-white/10 text-white hover:bg-white/20">DevOps</Badge>
-              </div>
-              <h3 className="text-lg font-medium mb-2 text-white font-sans leading-tight">{news.devops.title}</h3>
-              <p className="text-sm text-gray-400 font-mono leading-relaxed line-clamp-2">{news.devops.description}</p>
-            </Card>
-
-            {/* Security News */}
-            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
-              <div className="flex items-center gap-2 mb-4">
-                <LucideShieldAlert className="h-5 w-5 text-white" />
-                <Badge className="bg-white/10 text-white hover:bg-white/20">Security</Badge>
-              </div>
-              <h3 className="text-lg font-medium mb-2 text-white font-sans leading-tight">{news.security.title}</h3>
-              <p className="text-sm text-gray-400 font-mono leading-relaxed line-clamp-2">{news.security.description}</p>
-            </Card>
-
-            {/* Cloud News */}
-            <Card className="p-4 hover:shadow-md transition-shadow bg-white/5 border-white/10">
-              <div className="flex items-center gap-2 mb-4">
-                <LucideCloud className="h-5 w-5 text-white" />
-                <Badge className="bg-white/10 text-white hover:bg-white/20">Cloud</Badge>
-              </div>
-              <h3 className="text-lg font-medium mb-2 text-white font-sans leading-tight">{news.cloud.title}</h3>
-              <p className="text-sm text-gray-400 font-mono leading-relaxed line-clamp-2">{news.cloud.description}</p>
-            </Card>
-          </div>
-        </div>
-
-        {/* New Comic Section */}
-        <div className="p-6 border-t border-white/10">
-          <div className="text-center mb-4">
-            <Badge className="bg-white/10 text-white hover:bg-white/20">Comic del Día</Badge>
-          </div>
-          <div className="bg-white/5 rounded-lg p-4">
+    <div style={{ 
+      maxWidth: "600px", 
+      margin: "0 auto",
+      fontFamily: "Arial, sans-serif",
+      backgroundColor: "#000000",
+      color: "#ffffff"
+    }}>
+      {/* Email Header */}
+      <table width="100%" cellPadding="0" cellSpacing="0" style={{ borderCollapse: "collapse" }}>
+        <tr>
+          <td style={{ padding: "20px", textAlign: "center", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
             <img 
-              src="/images/Jan-24-Not-if-but-when.png" 
-              alt="Comic del Día - Work Chronicles" 
-              className="mx-auto max-w-full rounded-lg"
+              src="https://your-domain.com/lovable-uploads/079be5a7-51c4-4d5e-acef-88fbda687593.png" 
+              alt="Sysarmy Logo" 
+              style={{ height: "64px", marginBottom: "16px" }}
             />
-            <p className="text-center text-sm text-gray-400 mt-4 font-mono">
-              Fuente: <a href="https://workchronicles.substack.com" className="text-blue-400 hover:text-blue-300">Work Chronicles</a>
+            <h1 style={{ 
+              fontSize: "24px", 
+              fontWeight: "bold", 
+              marginBottom: "8px",
+              color: "#ffffff"
+            }}>
+              Firmware Friday
+            </h1>
+            <p style={{ color: "#9CA3AF", fontFamily: "monospace" }}>
+              ¿Listos para el update?<br />
+              Actualizá tu stack en menos de 30''
             </p>
-          </div>
-        </div>
+          </td>
+        </tr>
+      </table>
 
-        {/* Banner */}
-        <div className="bg-[#8B5CF6] p-8 text-center">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-4 font-sans">
-            ¿Querés más contenido tecnológico?
-          </h2>
-          <p className="text-white font-mono mb-6">
-            Seguinos en nuestras redes sociales para estar al día con las últimas novedades
-          </p>
-          <button className="bg-white text-[#8B5CF6] px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors">
-            Seguir a Sysarmy
-          </button>
-        </div>
+      {/* News Grid */}
+      <table width="100%" cellPadding="0" cellSpacing="0" style={{ borderCollapse: "collapse" }}>
+        <tr>
+          <td style={{ padding: "24px" }}>
+            <table width="100%" cellPadding="0" cellSpacing="0">
+              {/* Infrastructure News */}
+              <tr>
+                <td style={{ 
+                  padding: "16px", 
+                  backgroundColor: "rgba(255,255,255,0.05)", 
+                  borderRadius: "8px",
+                  marginBottom: "24px",
+                  display: "block"
+                }}>
+                  <div style={{ marginBottom: "16px" }}>
+                    <span style={{ 
+                      backgroundColor: "rgba(255,255,255,0.1)", 
+                      color: "#ffffff",
+                      padding: "4px 8px",
+                      borderRadius: "4px",
+                      fontSize: "14px"
+                    }}>
+                      Infrastructure
+                    </span>
+                  </div>
+                  <h3 style={{ 
+                    fontSize: "18px", 
+                    fontWeight: "500",
+                    marginBottom: "8px",
+                    color: "#ffffff"
+                  }}>
+                    {news.infrastructure.title}
+                  </h3>
+                  <p style={{ 
+                    fontSize: "14px",
+                    color: "#9CA3AF",
+                    fontFamily: "monospace",
+                    lineHeight: "1.5"
+                  }}>
+                    {news.infrastructure.description}
+                  </p>
+                </td>
+              </tr>
 
-        {/* Footer */}
-        <div className="bg-white/5 p-6 text-center border-t border-white/10">
-          <p className="text-sm text-gray-400 font-mono">
-            You received this email because you subscribed to Sysarmy's tech updates.
-          </p>
-        </div>
-      </div>
+              {/* AI News */}
+              <tr>
+                <td style={{ 
+                  padding: "16px", 
+                  backgroundColor: "rgba(255,255,255,0.05)", 
+                  borderRadius: "8px",
+                  marginTop: "24px",
+                  display: "block"
+                }}>
+                  <div style={{ marginBottom: "16px" }}>
+                    <span style={{ 
+                      backgroundColor: "rgba(255,255,255,0.1)", 
+                      color: "#ffffff",
+                      padding: "4px 8px",
+                      borderRadius: "4px",
+                      fontSize: "14px"
+                    }}>
+                      AI
+                    </span>
+                  </div>
+                  <h3 style={{ 
+                    fontSize: "18px", 
+                    fontWeight: "500",
+                    marginBottom: "8px",
+                    color: "#ffffff"
+                  }}>
+                    {news.ai.title}
+                  </h3>
+                  <p style={{ 
+                    fontSize: "14px",
+                    color: "#9CA3AF",
+                    fontFamily: "monospace",
+                    lineHeight: "1.5"
+                  }}>
+                    {news.ai.description}
+                  </p>
+                </td>
+              </tr>
+
+              {/* Testing News */}
+              <tr>
+                <td style={{ 
+                  padding: "16px", 
+                  backgroundColor: "rgba(255,255,255,0.05)", 
+                  borderRadius: "8px",
+                  marginTop: "24px",
+                  display: "block"
+                }}>
+                  <div style={{ marginBottom: "16px" }}>
+                    <span style={{ 
+                      backgroundColor: "rgba(255,255,255,0.1)", 
+                      color: "#ffffff",
+                      padding: "4px 8px",
+                      borderRadius: "4px",
+                      fontSize: "14px"
+                    }}>
+                      Testing
+                    </span>
+                  </div>
+                  <h3 style={{ 
+                    fontSize: "18px", 
+                    fontWeight: "500",
+                    marginBottom: "8px",
+                    color: "#ffffff"
+                  }}>
+                    Testing Frameworks
+                  </h3>
+                  <p style={{ 
+                    fontSize: "14px",
+                    color: "#9CA3AF",
+                    fontFamily: "monospace",
+                    lineHeight: "1.5"
+                  }}>
+                    Popular testing frameworks comparison for 2024.
+                  </p>
+                </td>
+              </tr>
+
+              {/* DevOps News */}
+              <tr>
+                <td style={{ 
+                  padding: "16px", 
+                  backgroundColor: "rgba(255,255,255,0.05)", 
+                  borderRadius: "8px",
+                  marginTop: "24px",
+                  display: "block"
+                }}>
+                  <div style={{ marginBottom: "16px" }}>
+                    <span style={{ 
+                      backgroundColor: "rgba(255,255,255,0.1)", 
+                      color: "#ffffff",
+                      padding: "4px 8px",
+                      borderRadius: "4px",
+                      fontSize: "14px"
+                    }}>
+                      DevOps
+                    </span>
+                  </div>
+                  <h3 style={{ 
+                    fontSize: "18px", 
+                    fontWeight: "500",
+                    marginBottom: "8px",
+                    color: "#ffffff"
+                  }}>
+                    {news.devops.title}
+                  </h3>
+                  <p style={{ 
+                    fontSize: "14px",
+                    color: "#9CA3AF",
+                    fontFamily: "monospace",
+                    lineHeight: "1.5"
+                  }}>
+                    {news.devops.description}
+                  </p>
+                </td>
+              </tr>
+
+              {/* Security News */}
+              <tr>
+                <td style={{ 
+                  padding: "16px", 
+                  backgroundColor: "rgba(255,255,255,0.05)", 
+                  borderRadius: "8px",
+                  marginTop: "24px",
+                  display: "block"
+                }}>
+                  <div style={{ marginBottom: "16px" }}>
+                    <span style={{ 
+                      backgroundColor: "rgba(255,255,255,0.1)", 
+                      color: "#ffffff",
+                      padding: "4px 8px",
+                      borderRadius: "4px",
+                      fontSize: "14px"
+                    }}>
+                      Security
+                    </span>
+                  </div>
+                  <h3 style={{ 
+                    fontSize: "18px", 
+                    fontWeight: "500",
+                    marginBottom: "8px",
+                    color: "#ffffff"
+                  }}>
+                    {news.security.title}
+                  </h3>
+                  <p style={{ 
+                    fontSize: "14px",
+                    color: "#9CA3AF",
+                    fontFamily: "monospace",
+                    lineHeight: "1.5"
+                  }}>
+                    {news.security.description}
+                  </p>
+                </td>
+              </tr>
+
+              {/* Cloud News */}
+              <tr>
+                <td style={{ 
+                  padding: "16px", 
+                  backgroundColor: "rgba(255,255,255,0.05)", 
+                  borderRadius: "8px",
+                  marginTop: "24px",
+                  display: "block"
+                }}>
+                  <div style={{ marginBottom: "16px" }}>
+                    <span style={{ 
+                      backgroundColor: "rgba(255,255,255,0.1)", 
+                      color: "#ffffff",
+                      padding: "4px 8px",
+                      borderRadius: "4px",
+                      fontSize: "14px"
+                    }}>
+                      Cloud
+                    </span>
+                  </div>
+                  <h3 style={{ 
+                    fontSize: "18px", 
+                    fontWeight: "500",
+                    marginBottom: "8px",
+                    color: "#ffffff"
+                  }}>
+                    {news.cloud.title}
+                  </h3>
+                  <p style={{ 
+                    fontSize: "14px",
+                    color: "#9CA3AF",
+                    fontFamily: "monospace",
+                    lineHeight: "1.5"
+                  }}>
+                    {news.cloud.description}
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      {/* Comic Section */}
+      <table width="100%" cellPadding="0" cellSpacing="0" style={{ borderCollapse: "collapse" }}>
+        <tr>
+          <td style={{ 
+            padding: "24px",
+            borderTop: "1px solid rgba(255,255,255,0.1)"
+          }}>
+            <div style={{ textAlign: "center", marginBottom: "16px" }}>
+              <span style={{ 
+                backgroundColor: "rgba(255,255,255,0.1)", 
+                color: "#ffffff",
+                padding: "4px 8px",
+                borderRadius: "4px",
+                fontSize: "14px"
+              }}>
+                Comic del Día
+              </span>
+            </div>
+            <div style={{ 
+              backgroundColor: "rgba(255,255,255,0.05)",
+              borderRadius: "8px",
+              padding: "16px"
+            }}>
+              <img 
+                src="/images/Jan-24-Not-if-but-when.png" 
+                alt="Comic del Día - Work Chronicles" 
+                style={{ 
+                  maxWidth: "100%",
+                  borderRadius: "8px",
+                  margin: "0 auto",
+                  display: "block"
+                }}
+              />
+              <p style={{ 
+                textAlign: "center",
+                fontSize: "14px",
+                color: "#9CA3AF",
+                marginTop: "16px",
+                fontFamily: "monospace"
+              }}>
+                Fuente: <a href="https://workchronicles.substack.com" style={{ color: "#60A5FA" }}>Work Chronicles</a>
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      {/* Banner */}
+      <table width="100%" cellPadding="0" cellSpacing="0" style={{ borderCollapse: "collapse" }}>
+        <tr>
+          <td style={{ padding: "24px", backgroundColor: "#8B5CF6", textAlign: "center" }}>
+            <h2 style={{ 
+              fontSize: "20px", 
+              fontWeight: "bold", 
+              marginBottom: "16px",
+              color: "#ffffff"
+            }}>
+              ¿Querés más contenido tecnológico?
+            </h2>
+            <p style={{ 
+              fontSize: "14px",
+              color: "#ffffff",
+              marginBottom: "24px"
+            }}>
+              Seguinos en nuestras redes sociales para estar al día con las últimas novedades
+            </p>
+            <button style={{ 
+              backgroundColor: "#ffffff",
+              color: "#8B5CF6",
+              padding: "12px 24px",
+              borderRadius: "9999px",
+              fontSize: "16px",
+              fontWeight: "bold",
+              cursor: "pointer",
+              transition: "background-color 0.3s ease"
+            }}>
+              Seguir a Sysarmy
+            </button>
+          </td>
+        </tr>
+      </table>
+
+      {/* Footer */}
+      <table width="100%" cellPadding="0" cellSpacing="0" style={{ borderCollapse: "collapse" }}>
+        <tr>
+          <td style={{ padding: "24px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
+            <p style={{ 
+              fontSize: "14px",
+              color: "#9CA3AF",
+              fontFamily: "monospace"
+            }}>
+              You received this email because you subscribed to Sysarmy's tech updates.
+            </p>
+          </td>
+        </tr>
+      </table>
     </div>
   );
 };
